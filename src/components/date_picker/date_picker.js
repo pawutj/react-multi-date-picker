@@ -514,6 +514,7 @@ function DatePicker(
   }
 
   function handleValueChange(e) {
+    console.log(e);
     if (isArray(date) || !editable) return;
 
     ref.current.selection = e.target.selectionStart;
